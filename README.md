@@ -2,6 +2,13 @@
 
 This document walks you through the resources needed to get setup with an Airtable API key and a Project tracker workspace key. First sign up to an Airtable account [here](https://airtable.com/). Once sign up follow step 1 below to get your API key. You will also need the Project tracker key to continue on to step 6 to make a GET request to get the Project tracker data.
 
+## Objective 
+
+* Attain an Airtable API Key 
+* Project tracker key 
+* GET request for your Project tracker data 
+* POST to your Project tracker
+
 ## 1. Account 
 ![account](Assets/account.jpg)
 
@@ -32,7 +39,7 @@ After clicking on the Project tracker your project id key will be in the curl re
 
 ## 7. Making a POST request to the Project tracker 
 
-POST endpoint `https://api.airtable.com/v0/(Project tracker goes here)/Design%20projects?typecast=true&api_key=(API key goes here)`   
+POST endpoint `https://api.airtable.com/v0/(Project tracker key goes here)/Design%20projects?typecast=true&api_key=(API key goes here)`   
 Headers: "application/json" "Content-Type"
 
 This is a sample JSON HTTP body (This would be your Swift model that you convert to Data using JSONEncoder to Post to the Project tracker)   
