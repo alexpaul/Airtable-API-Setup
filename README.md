@@ -32,10 +32,10 @@ After clicking on the Project tracker your project id key will be in the curl re
 
 ## 7. Making a POST request to the Project tracker 
 
-POST endpoint `https://api.airtable.com/v0/(Project tracker goes here)/Design%20projects?typecast=true&api_key=(API key goes here)`
+POST endpoint `https://api.airtable.com/v0/(Project tracker goes here)/Design%20projects?typecast=true&api_key=(API key goes here)`   
 Headers: "application/json" "Content-Type"
 
-This is a sample JSON HTTP body (This would be your Swift model that you convert to Data using JSONEncoder to Post to the Project tracker)
+This is a sample JSON HTTP body (This would be your Swift model that you convert to Data using JSONEncoder to Post to the Project tracker)   
 ```json 
 {
 	"records" : [
