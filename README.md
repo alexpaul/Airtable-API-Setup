@@ -29,3 +29,27 @@ After clicking on the Project tracker your project id key will be in the curl re
 
 #### Postman GET response to get back Project tracker data (see endpoint above)
 ![project tracker data](Assets/postman-request.png)
+
+## 7. Making a POST request to the Project tracker 
+
+POST endpoint `https://api.airtable.com/v0/(Project tracker goes here)/Design%20projects?typecast=true&api_key=(API key goes here)`
+Headers: "application/json" "Content-Type"
+
+This is a sample JSON HTTP body (This would be your Swift model that you convert to Data using JSONEncoder to Post to the Project tracker)
+```json 
+{
+	"records" : [
+		{
+			"fields": {
+				"Name": "Saint Lucia",
+				"About": "Tropical Island Paradise with a drive-in volcano. Known as Helen of the West.", 
+				"Project images": [
+					{
+						"url": "http://www.premiumcaribbean.nl/wp-content/uploads/2017/08/Piton-Soufriere-1024x659.jpg"
+					}
+				]
+			}
+		}
+	]
+}
+```
