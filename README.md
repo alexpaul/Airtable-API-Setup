@@ -66,9 +66,11 @@ This is a sample JSON HTTP body (This would be your Swift model that you convert
 }
 ```
 
-## 9. Making a POST request in Postman 
+## 9. Making a POST request in Postman. 
 
-#### In the following POST it fails at the field name `About` does not exist as a column in the Project tracker 
+When making a POST request in Postman add the data to be sent in the HTTP body section of Postman
+
+#### In the following POST it fails as the field name `About` does not exist as a column in the Project tracker 
 ![failed post](Assets/post-failed-unknown-field.png)
 
 
