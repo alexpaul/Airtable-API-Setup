@@ -38,10 +38,14 @@ After clicking on the Project tracker your project id key will be in the curl re
 #### Postman GET response to get back Project tracker data (see endpoint above)
 ![project tracker data](Assets/postman-request.png)
 
-## 8. POST request endpoint and making a POST request to the Project tracker 
+## 8. Set the Content-Type header in Postman to make a POST request
 
 POST endpoint `https://api.airtable.com/v0/(Project tracker key goes here)/Design%20projects?typecast=true&api_key=(API key goes here)`   
 Headers: "application/json" "Content-Type"
+
+The Content-Type needs to be `application/json` 
+
+![postman headers](Assets/postman-headers.png)
 
 This is a sample JSON HTTP body (This would be your Swift model that you convert to Data using JSONEncoder to Post to the Project tracker)   
 ```json 
@@ -61,3 +65,23 @@ This is a sample JSON HTTP body (This would be your Swift model that you convert
 	]
 }
 ```
+
+## 9. Making a POST request in Postman 
+
+#### In the following POST it fails at the field name `About` does not exist as a column in the Project tracker 
+![failed post](Assets/post-failed-unknown-field.png)
+
+
+## 10. Select the `+` button in the Project tracker on Airtable to create a new field 
+
+![select add to create a new field](Assets/select-add-button-for-new-field.png)
+
+## 11. Create new field in the Project tracker 
+
+![create new field](Assets/create-new-field.png)
+
+## 12. POST reqeusts now succeeds as all fields exist on the Project tracker workspace on Airtable
+
+![post successful](Assets/post-success-field-exist.png)
+
+
