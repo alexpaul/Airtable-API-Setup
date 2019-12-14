@@ -15,4 +15,4 @@ Once in the API documentation, click on the Project tracker
 
 ## 4
 After clicking on the Project tracker you project id key will be in the curl request line to the top right, starts with /app_________
-![create records documentation](create-records-documentation.png)
+![create records documentation](Assets/create-records-documentation.png)
