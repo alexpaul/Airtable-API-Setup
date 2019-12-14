@@ -82,7 +82,7 @@ When making a POST request in Postman add the data to be sent in the HTTP body s
 
 ![create new field](Assets/create-new-field.png)
 
-## 12. POST reqeusts now succeeds as all fields exist on the Project tracker workspace on Airtable
+## 12. POST requests now succeeds as all fields exist on the Project tracker workspace on Airtable
 
 ![post successful](Assets/post-success-field-exist.png)
 
