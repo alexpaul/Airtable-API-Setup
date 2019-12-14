@@ -32,12 +32,13 @@ Once in the API documentation, click on the Project tracker
 After clicking on the Project tracker your project id key will be in the curl request line to the top right, starts with /app_________
 ![create records documentation](Assets/create-records-documentation.png)
 
+## 7. GET request endpoint and info 
 >After getting your (Project tracker key) and you (API key) this GET request endpoint will work in Postman to get back the data from your Project tracker `https://api.airtable.com/v0/(Project tracker id goes here)/Design%20projects?typecast=true&&api_key=(API key goes here)`
 
 #### Postman GET response to get back Project tracker data (see endpoint above)
 ![project tracker data](Assets/postman-request.png)
 
-## 7. Making a POST request to the Project tracker 
+## 8. POST request endpoint and making a POST request to the Project tracker 
 
 POST endpoint `https://api.airtable.com/v0/(Project tracker key goes here)/Design%20projects?typecast=true&api_key=(API key goes here)`   
 Headers: "application/json" "Content-Type"
